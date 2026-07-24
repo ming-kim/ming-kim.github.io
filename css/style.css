@@ -89,3 +89,11 @@ nav{
 .project-card:hover{
     transform:translateY(-5px);
 }
+.content{
+    padding:0 80px 80px;
+    max-width:1000px;
+}
+
+.content h2{
+    margin-top:50px;
+}

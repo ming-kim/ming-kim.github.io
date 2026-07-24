@@ -46,3 +46,28 @@ nav{
     padding:30px;
     border-radius:12px;
 }
+
+.featured-projects{
+    padding:80px;
+}
+
+.featured-projects h2{
+    margin-bottom:30px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.project-card{
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:30px;
+    transition:0.2s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}

@@ -71,3 +71,21 @@ nav{
 .project-card:hover{
     transform:translateY(-5px);
 }
+
+.projects{
+    padding:0 80px 80px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.project-card{
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:30px;
+    transition:0.2s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}

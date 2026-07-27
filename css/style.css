@@ -97,3 +97,27 @@ nav{
 .content h2{
     margin-top:50px;
 }
+html{
+    scroll-behavior:smooth;
+}
+
+.section{
+    padding:80px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.project-card{
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:30px;
+    transition:0.2s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}

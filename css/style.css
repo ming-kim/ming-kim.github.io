@@ -86,3 +86,17 @@ nav{
     border-left:3px solid #222;
     padding-left:20px;
 }
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.timeline-item{
+    border-left:3px solid #222;
+    padding-left:20px;
+}
+
+.timeline-item h3{
+    margin-bottom:10px;
+}

@@ -124,3 +124,32 @@ nav{
 #contact p{
     margin-bottom:12px;
 }
+.experience-card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.job-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.period {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.experience-card a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.experience-card a:hover {
+    text-decoration: underline;
+}

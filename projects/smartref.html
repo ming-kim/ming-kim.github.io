@@ -1,72 +1,207 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartRef 전환 및 데이터 최적화</title>
+    <title>SmartRef 기반 애니메이션 파이프라인 구축 및 데이터 최적화</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <nav>
+
     <div class="logo">
         <a href="../index.html">김민경</a>
     </div>
+
 </nav>
 
 <section class="hero">
-    <h1>SmartRef 전환 및 데이터 최적화</h1>
-    <p>6,000개 이상의 애니메이션 데이터를 SmartRef 구조로 전환한 프로젝트</p>
-</section>
 
-<section class="section">
-    <h2>프로젝트 개요</h2>
+    <h1>SmartRef 기반 애니메이션 파이프라인 구축 및 데이터 최적화</h1>
+
     <p>
-        SmartRef 도입 검증부터 자동화 툴 개발, 운영 가이드 작성까지 수행하며
-        대규모 애니메이션 데이터를 전환한 프로젝트입니다.
+        참조 기반 제작 환경을 구축하고 운영 툴을 개발하여
+        데이터 관리 효율성과 파이프라인 안정성을 개선한 프로젝트
     </p>
+
 </section>
 
+
+
+<!-- Project Info -->
+
 <section class="section">
-    <h2>담당 업무</h2>
+
+    <h2>프로젝트 정보</h2>
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <h3>프로젝트</h3>
+            <p>The First Descendant</p>
+        </div>
+
+        <div class="info-card">
+            <h3>기간</h3>
+            <p>2025</p>
+        </div>
+
+        <div class="info-card">
+            <h3>인원</h3>
+            <p>1명</p>
+        </div>
+
+        <div class="info-card">
+            <h3>역할</h3>
+            <p>설계 · 검증 · 툴 개발</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Challenge -->
+
+<section class="section">
+
+    <h2>Challenge</h2>
+
+    <p>
+        기존 애니메이션 파일은 리그와 모델 데이터를 각각 포함하고 있어
+        데이터 중복 저장이 발생하고 파일 관리 비용이 증가하고 있었습니다.
+    </p>
+
+    <p>
+        또한 리깅 구조가 변경될 경우 다수의 애니메이션 파일에 영향을 주어
+        유지보수와 버전 관리에 어려움이 있었습니다.
+    </p>
+
     <ul>
-        <li>SmartRef 도입 검증</li>
-        <li>XRef 비교 분석</li>
-        <li>자동화 툴 개발</li>
-        <li>대량 변환 작업 수행</li>
+        <li>데이터 중복 저장</li>
+        <li>파일 용량 증가</li>
+        <li>리그 변경 시 재작업 발생</li>
+        <li>버전 관리 복잡도 증가</li>
+    </ul>
+
+</section>
+
+
+
+<!-- Solution -->
+
+<section class="section">
+
+    <h2>Solution</h2>
+
+    <p>
+        SmartRef 기반 참조 구조를 도입하여
+        리그 데이터와 애니메이션 데이터를 분리하는
+        제작 파이프라인을 설계했습니다.
+    </p>
+
+    <h3>기술 검증</h3>
+
+    <ul>
+        <li>Override 구조 검증</li>
+        <li>Reload 동작 검증</li>
+        <li>Constraint 안정성 검증</li>
+        <li>Morpher 유지 검증</li>
+        <li>Export 안정성 검증</li>
+    </ul>
+
+    <h3>운영 툴 개발</h3>
+
+    <ul>
+        <li>SmartRef 상태 확인 툴</li>
+        <li>SmartRef 일괄 생성 툴</li>
+        <li>SmartRef 컨버팅 툴</li>
+        <li>애니메이션 데이터 유지 컨버팅</li>
+        <li>버전 및 경로 관리 툴</li>
+    </ul>
+
+    <h3>파이프라인 구축</h3>
+
+    <ul>
+        <li>애니메이션 파일 자동 변환</li>
+        <li>Body / Head 자동 조립</li>
+        <li>Reference 자동 연결</li>
+        <li>Perforce 연동 자동화</li>
+        <li>배치 처리 지원</li>
+    </ul>
+
+</section>
+
+
+
+<!-- Result -->
+
+<section class="section">
+
+    <h2>Result</h2>
+
+    <ul>
+        <li>SmartRef 적용 가능성 검증 완료</li>
+        <li>리그 변경 대응 프로세스 확보</li>
+        <li>애니메이션 데이터 유지 기반 컨버팅 구축</li>
+        <li>수십~수백 개 파일 일괄 처리 자동화</li>
+        <li>데이터 관리 효율 향상</li>
+        <li>파일 중복 저장 감소</li>
+    </ul>
+
+</section>
+
+
+
+<!-- Contribution -->
+
+<section class="section">
+
+    <h2>My Contribution</h2>
+
+    <ul>
+        <li>SmartRef 도입 검토 및 운영 정책 수립</li>
+        <li>파이프라인 설계</li>
+        <li>검증 테스트 설계 및 수행</li>
+        <li>Python / MaxScript 기반 툴 개발</li>
+        <li>Perforce 연동 구현</li>
         <li>운영 가이드 작성</li>
     </ul>
+
 </section>
 
+
+
+<!-- Tech Stack -->
+
 <section class="section">
-    <h2>문제점</h2>
+
+    <h2>Tech Stack</h2>
+
     <p>
-        기존 데이터 구조의 관리 비용 증가와 저장 공간 사용량 증가 문제가 있었습니다.
+        Python · MaxScript · P4Python · Perforce · 3ds Max · SmartRef
     </p>
+
 </section>
 
+
+
+<!-- Media -->
+
 <section class="section">
-    <h2>해결 방법</h2>
+
+    <h2>Images / Video</h2>
+
     <p>
-        SmartRef 구조 검증 후 자동화 툴을 개발하여
-        대량 변환 작업을 안정적으로 수행할 수 있도록 구축했습니다.
+        SmartRef 구조도, Override 테스트 결과,
+        컨버팅 툴 UI, Batch 처리 영상 추가 예정
     </p>
-</section>
 
-<section class="section">
-    <h2>성과</h2>
-    <ul>
-        <li>약 6,000개 애니메이션 데이터 전환</li>
-        <li>약 30GB 저장 공간 절감</li>
-        <li>운영 효율 향상</li>
-        <li>작업 프로세스 표준화</li>
-    </ul>
-</section>
-
-<section class="section">
-    <h2>사용 기술</h2>
-    <p>3ds Max / Python / SmartRef / Asset Management</p>
 </section>
 
 </body>
 </html>
+```

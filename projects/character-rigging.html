@@ -1,141 +1,200 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Rigging & Production</title>
+    <title>PC 공용 스킨 제작 자동화 파이프라인 구축</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <nav>
+
     <div class="logo">
         <a href="../index.html">김민경</a>
     </div>
+
 </nav>
 
 <section class="hero">
 
-    <h1>Character Rigging & Production</h1>
+    <h1>PC 공용 스킨 제작 자동화 파이프라인 구축</h1>
 
     <p>
-        캐릭터, 스킨, 헤어, 부착물 제작 및 품질 개선 작업
+        반복적인 공용 스킨 제작 작업을 자동화하여
+        제작 시간을 약 50% 단축한 생산성 개선 프로젝트
     </p>
 
 </section>
 
+
+<!-- Project Info -->
+
 <section class="section">
 
-    <h2>프로젝트 개요</h2>
+    <h2>프로젝트 정보</h2>
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <h3>프로젝트</h3>
+            <p>The First Descendant</p>
+        </div>
+
+        <div class="info-card">
+            <h3>기간</h3>
+            <p>2025.08 ~ 2025.10</p>
+        </div>
+
+        <div class="info-card">
+            <h3>인원</h3>
+            <p>1명</p>
+        </div>
+
+        <div class="info-card">
+            <h3>역할</h3>
+            <p>설계 · 개발 · 운영</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Challenge -->
+
+<section class="section">
+
+    <h2>Challenge</h2>
 
     <p>
-        The First Descendant 개발 과정에서
-        다양한 캐릭터, 스킨, 헤어 및 부착물 리깅 작업을 수행하였습니다.
-
-        제작뿐 아니라 피팅, 폴리싱, 세컨더리 셋업,
-        품질 검수까지 담당하며 실제 게임 제작 환경에서
-        안정적으로 운영 가능한 결과물을 제작했습니다.
+        신규 공용 스킨 제작 시 캐릭터별 재스킨,
+        추가 세팅, 파일 관리 및 업로드 과정이
+        대부분 수작업으로 진행되고 있었습니다.
     </p>
 
+    <p>
+        캐릭터 수가 증가할수록 반복 작업이 증가했고,
+        휴먼 에러와 품질 편차가 지속적으로 발생했습니다.
+    </p>
+
+    <div class="workflow-box">
+
+        <h3>기존 작업 프로세스</h3>
+
+        <p>
+            신규 스킨 생성
+            → 캐릭터별 재스킨
+            → 추가 세팅
+            → 파일 관리
+            → 업로드
+        </p>
+
+    </div>
+
 </section>
+
+
+<!-- Solution -->
 
 <section class="section">
 
-    <h2>담당 업무</h2>
+    <h2>Solution</h2>
+
+    <p>
+        레퍼런스 리깅 파일을 기반으로
+        신규 캐릭터용 공용 스킨 파일을 자동 생성하는
+        Auto-Fit 파이프라인을 구축했습니다.
+    </p>
+
+    <h3>주요 기능</h3>
 
     <ul>
-
-        <li>캐릭터 및 스킨 리깅</li>
-
-        <li>헤어 리깅 및 세컨더리 셋업</li>
-
-        <li>부착물 리깅</li>
-
-        <li>다이나믹 모션 셋업</li>
-
-        <li>피팅 및 폴리싱</li>
-
-        <li>엔진 적용 및 검수</li>
-
+        <li>공용 스킨 자동 생성</li>
+        <li>Auto-Fit 자동 처리</li>
+        <li>스킨 데이터 자동 복사</li>
+        <li>네이밍 규칙 검증</li>
+        <li>파일 구조 검증</li>
+        <li>작업 파일 자동 관리</li>
     </ul>
+
+    <div class="workflow-box">
+
+        <h3>개선된 작업 프로세스</h3>
+
+        <p>
+            Auto-Fit 실행
+            → 자동 생성
+            → 자동 검증
+            → 최종 확인
+        </p>
+
+    </div>
 
 </section>
 
-<section class="section">
 
-    <h2>주요 제작 사례</h2>
-
-    <ul>
-
-        <li>Ultimate Freyna</li>
-
-        <li>Ultimate Bunny</li>
-
-        <li>Sharen</li>
-
-        <li>Hailey</li>
-
-        <li>NieR: Automata Collaboration Skins</li>
-
-        <li>Various Character Skins & Head Parts</li>
-
-    </ul>
-
-</section>
+<!-- Result -->
 
 <section class="section">
 
     <h2>Result</h2>
 
     <ul>
-
-        <li>라이브 서비스 환경에서 다수의 캐릭터 및 스킨 제작 참여</li>
-
-        <li>대규모 스킨 제작 일정 대응</li>
-
-        <li>다이나믹 모션 및 품질 기준 정립 지원</li>
-
-        <li>리깅 및 제작 프로세스 안정화 기여</li>
-
+        <li>제작 시간 약 50% 단축</li>
+        <li>반복 수작업 제거</li>
+        <li>휴먼 에러 감소</li>
+        <li>작업 품질 표준화</li>
+        <li>대량 제작 대응 효율 향상</li>
     </ul>
 
 </section>
+
+
+<!-- Contribution -->
+
+<section class="section">
+
+    <h2>My Contribution</h2>
+
+    <ul>
+        <li>파이프라인 설계</li>
+        <li>Python 기반 자동화 툴 개발</li>
+        <li>3ds Max 연동 구현</li>
+        <li>검증 로직 설계</li>
+        <li>사용자 가이드 작성</li>
+        <li>운영 및 유지보수</li>
+    </ul>
+
+</section>
+
+
+<!-- Tech Stack -->
 
 <section class="section">
 
     <h2>Tech Stack</h2>
 
-    <div class="tech-stack">
-
-        <span>3ds Max</span>
-
-        <span>Rigging</span>
-
-        <span>Skinning</span>
-
-        <span>Animation</span>
-
-        <span>Unreal Engine</span>
-
-        <span>AnimPhys</span>
-
-    </div>
+    <p>
+        Python · pymxs · P4Python · 3ds Max · Perforce
+    </p>
 
 </section>
 
+
+<!-- Media -->
+
 <section class="section">
 
-    <h2>Gallery</h2>
+    <h2>Images / Video</h2>
 
     <p>
-        프로젝트 이미지 및 영상은 추후 추가 예정
+        Auto-Fit 실행 영상, 작업 화면, Before / After 이미지 추가 예정
     </p>
-
-    <img
-        src="../images/placeholder.jpg"
-        alt="Placeholder">
 
 </section>
 
 </body>
 </html>
+```

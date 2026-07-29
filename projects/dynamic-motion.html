@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>여성 하체 다이나믹 모션 R&D</title>
+    <title>Lower Body Dynamic Motion R&D</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -15,57 +15,107 @@
 </nav>
 
 <section class="hero">
-    <h1>여성 하체 다이나믹 모션 R&D</h1>
-    <p>자연스러운 캐릭터 움직임 구현을 위한 다이나믹 모션 연구 프로젝트</p>
+
+    <h1>Lower Body Dynamic Motion R&D</h1>
+
+    <p>
+        Expression 기반 Shape Bone 시스템 구축
+    </p>
+
 </section>
 
 <section class="section">
+
     <h2>프로젝트 개요</h2>
+
     <p>
-        여성 캐릭터의 자연스러운 움직임 표현을 목표로
-        다이나믹 모션 시스템을 연구하고 적용한 프로젝트입니다.
+        PC 캐릭터의 하체 움직임에 따라 발생하는 엉덩이 실루엣 변형을
+        자연스럽게 보정하기 위해 진행한 R&D 프로젝트입니다.
     </p>
+
+    <p>
+        기존 Shape Bone 방식은 신규 본 추가 시
+        기존 애니메이션 데이터를 재생성하거나 컨버팅해야 하는 문제가 있었기 때문에,
+        애니메이션 수정 없이 엔진에서 동작 가능한 Expression 기반 Shape Bone 구조를 설계하였습니다.
+    </p>
+
 </section>
 
 <section class="section">
+
+    <h2>Challenge</h2>
+
+    <p>
+        캐릭터의 Pelvis 및 Thigh 움직임에 따라
+        엉덩이 형태가 크게 변화하지만,
+        기존 리깅 구조만으로는 자연스러운 볼륨 유지가 어려웠습니다.
+    </p>
+
+    <ul>
+        <li>Shape Bone 추가 시 애니메이션 컨버팅 비용 증가</li>
+        <li>기존 애니메이션 자산 재작업 필요</li>
+        <li>유지보수 비용 증가</li>
+        <li>대규모 캐릭터 적용 시 운영 부담 발생</li>
+    </ul>
+
+</section>
+
+<section class="section">
+
+    <h2>Solution</h2>
+
+    <p>
+        Pelvis 및 Thigh 회전값을 기반으로 Shape Bone이 자동으로 움직이는
+        Expression 기반 보정 시스템을 구축했습니다.
+    </p>
+
+    <ul>
+        <li>Wire Parameter 기반 자동 연동</li>
+        <li>Thigh Rotation 값을 활용한 Shape Bone 제어</li>
+        <li>Position / Rotation 자동 계산 구조 설계</li>
+        <li>애니메이션 데이터 수정 없이 실시간 Shape 보정</li>
+        <li>3ds Max 및 Unreal Engine 검증 진행</li>
+    </ul>
+
+</section>
+
+<section class="section">
+
     <h2>담당 업무</h2>
+
     <ul>
-        <li>R&D 수행</li>
-        <li>세팅 검증</li>
-        <li>폴리싱</li>
-        <li>대량 적용</li>
-        <li>품질 검수</li>
+        <li>Shape Bone 구조 설계</li>
+        <li>Wire Parameter 구성</li>
+        <li>Expression 공식 작성 및 튜닝</li>
+        <li>3ds Max 테스트 환경 구축</li>
+        <li>Animation Blueprint 테스트</li>
+        <li>엔진 적용 검증</li>
     </ul>
+
 </section>
 
 <section class="section">
-    <h2>문제점</h2>
-    <p>
-        자연스러운 움직임 표현과 대규모 적용 시 품질 유지가 필요했습니다.
-    </p>
-</section>
 
-<section class="section">
-    <h2>해결 방법</h2>
-    <p>
-        다이나믹 모션 세팅을 연구하고 반복 검증을 통해
-        대규모 적용 가능한 기준을 수립했습니다.
-    </p>
-</section>
+    <h2>Result</h2>
 
-<section class="section">
-    <h2>성과</h2>
     <ul>
-        <li>약 400개 캐릭터 적용</li>
-        <li>품질 안정화</li>
-        <li>운영 기준 수립</li>
-        <li>대규모 적용 기반 확보</li>
+        <li>애니메이션 컨버팅 없이 적용 가능한 구조 구축</li>
+        <li>기존 애니메이션 자산 재사용 가능</li>
+        <li>유지보수 비용 감소</li>
+        <li>자연스러운 하체 실루엣 구현</li>
+        <li>대규모 캐릭터 적용 가능한 구조 확보</li>
     </ul>
+
 </section>
 
 <section class="section">
-    <h2>사용 기술</h2>
-    <p>AnimPhys / Character Rigging / Physics Simulation / Unreal Engine</p>
+
+    <h2>Tech Stack</h2>
+
+    <p>
+        3ds Max · Wire Parameter · Expression Controller · Character Rigging · Unreal Engine · Animation Blueprint
+    </p>
+
 </section>
 
 </body>
